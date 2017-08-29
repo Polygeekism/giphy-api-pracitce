@@ -7,8 +7,11 @@
     <script src='client.js'></script>
 </head>
 
-<body ng-app='GiphyApp' ng-controller = 'GiphyController'>
+<body ng-app='GiphyApp' ng-controller = 'GiphyController as vm'>
     <h1>Giphy is Awesome!</h1>
+    <p><button ng-click = 'vm.getRandomGif();'>Get Random</button></p>
+
+    <img ng-src="{{vm.displayUrl}}">
 </body>
 
 </html>
